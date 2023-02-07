@@ -8,12 +8,22 @@
 </head>
 <body>
     <h1>OPEN WEATHER API</h1>
-    <!-- <div id="Jsondata">
 
-    </div> -->
     <div id="usingfetch">
 
     </div>
+    <main>
+        <input type="text" id="input">
+        <button type="button" onclick="readData(input)">Submit</button>
+        <p id="loc">
+            Country=<br>
+            Max TEMP=<br>
+            Min TEMP=<br>
+        </p>
+    </main>
+    <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
     <script src="weather.js"></script>
+    <script src="charts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>
